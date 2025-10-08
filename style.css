@@ -38,11 +38,10 @@ section {
 /* ===== HERO ===== */
 .hero {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: 20px;
+  justify-content: flex-start;  /* elemen ke kiri */
+  align-items: flex-start;      /* sejajar atas */
   text-align: left;
-  padding: 40px 25px;
+  padding: 30px 25px;
   background: url("images/20f3ce301d5db37417fb03ca798d19ad.jpg") center/cover no-repeat;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255,255,255,0.05);
@@ -50,9 +49,9 @@ section {
 
 .hero-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;          /* foto dan teks sejajar horizontal */
   align-items: center;
-  gap: 20px; /* jarak antara foto dan teks */
+  gap: 20px;                    /* jarak antara foto dan teks */
 }
 
 .profile-pic {
@@ -64,16 +63,16 @@ section {
 }
 
 .hero-text h1 {
-  color: white;
-  -webkit-text-stroke: 1px black;
   font-size: 1.4em;
+  color: #ffcc00;
+  -webkit-text-stroke: 1px black;
   margin-bottom: 6px;
 }
 
 .hero-text p {
   font-size: 0.95em;
-  line-height: 1.4;
   color: #ddd;
+  line-height: 1.4;
   max-width: 250px;
 }
 
