@@ -1,136 +1,79 @@
-/* ===== RESET & DASAR ===== */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ===== BODY ===== */
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
-  background-color: #0f0f0f;
-  line-height: 1.6;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.section {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  background: rgba(0, 0, 0, 0.9);
-  position: fixed;
-  top: 0;
+/* ===== SECTION UMUM ===== */
+section {
   width: 100%;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-}
-
-.navbar .container {
+  max-width: 420px; /* agar pas skala 9:16 di tengah */
+  aspect-ratio: 9/16;
+  min-height: 100vh;
+  padding: 40px 25px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 15px 0;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #1e90ff;
+  text-align: center;
+  background: #1a1a1a;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
 }
 
 /* ===== HERO ===== */
 .hero {
   background: url("images/background.jpg") center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
   color: #fff;
 }
 
 .profile-pic {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
-.hero h2 {
-  font-size: 2em;
-}
-
-.hero span {
-  color: #1e90ff;
+.hero h1 {
+  font-size: 1.6em;
 }
 
 .hero p {
-  margin: 10px 0 20px;
-}
-
-.primary-btn {
-  background: #1e90ff;
-  padding: 12px 30px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.primary-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  font-size: 1em;
+  margin-top: 10px;
+  max-width: 300px;
 }
 
 /* ===== ABOUT ===== */
-#about {
-  background: #1a1a1a;
-  color: #fff;
+.about {
+  background: rgba(255, 255, 255, 0.05);
 }
 
-#about p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1rem;
+.about p {
+  font-size: 0.95em;
+  max-width: 330px;
+  line-height: 1.6;
 }
 
-/* ===== SOSIAL MEDIA ===== */
-.dark {
-  background: #111;
+/* ===== MEDIA SOSIAL ===== */
+.social {
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .social-links {
@@ -138,18 +81,18 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .btn {
   text-decoration: none;
   color: white;
-  padding: 15px 30px;
+  padding: 12px 20px;
   border-radius: 10px;
   font-weight: bold;
-  display: inline-block;
-  width: 220px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -162,19 +105,23 @@ body {
 .tiktok { background: #000; border: 1px solid #fff; }
 .youtube { background: #FF0000; }
 .github { background: #333; }
-.contact { background: #1e90ff; }
 
 /* ===== KONTAK ===== */
-#contact p {
-  margin-bottom: 25px;
-  font-size: 1rem;
+.contact {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-btn {
+  background: #1e90ff;
+  margin-top: 15px;
 }
 
 /* ===== FOOTER ===== */
 footer {
-  background: #000;
   text-align: center;
+  font-size: 0.8em;
   padding: 20px;
-  font-size: 0.9em;
-  border-top: 1px solid #222;
+  opacity: 0.7;
+  width: 100%;
+  max-width: 420px;
 }
