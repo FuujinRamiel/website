@@ -63,14 +63,14 @@ section {
 }
 
 .hero-text h1 {
-  font-size: 1.4em;
+  font-size: 2.0em;
   color: #ffcc00;
   -webkit-text-stroke: 1px black;
   margin-bottom: 6px;
 }
 
 .hero-text p {
-  font-size: 0.95em;
+  font-size: 1.0em;
   color: #ddd;
   line-height: 1.4;
   max-width: 250px;
