@@ -1,23 +1,63 @@
 body {
-  background-color: #f0f8ff;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
   text-align: center;
-  padding-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid white;
 }
 
 h1 {
-  color: #0078ff;
+  margin: 10px 0 5px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #0078ff;
+p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.links {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
   color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: #005fcc;
+.instagram { background: #E4405F; }
+.tiktok { background: #010101; }
+.youtube { background: #FF0000; }
+.github { background: #333333; }
+.facebook { background: #1877F2; }
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
