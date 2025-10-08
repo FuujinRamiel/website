@@ -1,66 +1,63 @@
-/* === Background Default === */
+/* ===== Umum ===== */
 body {
-  background: linear-gradient(135deg, #4f46e5, #9333ea);
-  color: white;
+  background: url('images/Screenshot_2025-10-08-14-21-36-328_com.google.android.googlequicksearchbox.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
-  transition: background 0.5s ease;
+  line-height: 1.6;
 }
 
-/* === Kotak Utama === */
-.container {
+section {
+  padding: 60px 20px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
-  width: 320px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
-/* === Foto Profil === */
-.profile-pic {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
+h1, h2 {
   margin-bottom: 15px;
+}
+
+p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+}
+
+/* ===== Header ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   border: 3px solid white;
   object-fit: cover;
 }
 
-/* === Teks Utama === */
-h1 {
-  margin: 10px 0 5px;
-}
-
-p {
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* === Tombol Balok === */
+/* ===== Media Sosial ===== */
 .links {
-  margin-top: 25px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
+  margin-top: 20px;
 }
 
 .btn {
+  width: 250px;
   text-decoration: none;
   color: white;
   padding: 15px;
   border-radius: 10px;
   font-weight: bold;
-  text-align: center;
   font-size: 16px;
   transition: all 0.3s ease;
-  width: 100%;
-  display: block;
 }
 
 .instagram { background: #E4405F; }
@@ -74,17 +71,39 @@ p {
   opacity: 0.9;
 }
 
-/* === Area Kustomisasi === */
-.customizer {
-  margin-top: 25px;
-  font-size: 14px;
-  text-align: left;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 10px;
+/* ===== Musik ===== */
+.music-list {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.customizer input {
-  margin: 8px 0;
+/* ===== Galeri ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
 }
