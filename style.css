@@ -118,8 +118,7 @@ section {
 
 /* ===== SPOTIFY PLAYLIST ===== */
 .music {
-  background: rgba(255, 255, 255, 0.06);
-  text-align: center;
+  background: url("images/77df145c3380a5384c7fbbaa3be9d41e (1).jpg") center/cover no-repeat;
 }
 
 .spotify-player {
