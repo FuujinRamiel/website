@@ -8,10 +8,14 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Foto Profil" class="profile-pic">
+    <!-- Foto Profil -->
+    <img src="images/f392481ab4535605f0a67d899aeac11d.jpg" alt="Foto Profil" class="profile-pic">
+
+    <!-- Nama dan bio -->
     <h1>@namakamu</h1>
     <p>Temukan aku di media sosial ✨</p>
 
+    <!-- Tombol Media Sosial -->
     <div class="links">
       <a href="https://instagram.com/username" target="_blank" class="btn instagram">Instagram</a>
       <a href="https://tiktok.com/@username" target="_blank" class="btn tiktok">TikTok</a>
@@ -19,6 +23,41 @@
       <a href="https://github.com/username" target="_blank" class="btn github">GitHub</a>
       <a href="https://facebook.com/username" target="_blank" class="btn facebook">Facebook</a>
     </div>
+
+    <!-- Area pengaturan -->
+    <div class="customizer">
+      <h3>🔧 Kustomisasi</h3>
+      <label for="bgInput">Ganti Background:</label>
+      <input type="file" id="bgInput" accept="image/*">
+      <br>
+      <label for="ppInput">Ganti Foto Profil:</label>
+      <input type="file" id="ppInput" accept="image/*">
+    </div>
   </div>
+
+  <script>
+    // Ganti background dengan gambar yang di-upload
+    const bgInput = document.getElementById('bgInput');
+    bgInput.addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        document.body.style.backgroundImage = `url('${url}')`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+      }
+    });
+
+    // Ganti foto profil dengan gambar baru
+    const ppInput = document.getElementById('ppInput');
+    const profilePic = document.querySelector('.profile-pic');
+    ppInput.addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      if (file) {
+        const url = URL.createObjectURL(file);
+        profilePic.src = url;
+      }
+    });
+  </script>
 </body>
 </html>
