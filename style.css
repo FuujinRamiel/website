@@ -1,3 +1,4 @@
+/* Latar belakang */
 body {
   background: linear-gradient(135deg, #4f46e5, #9333ea);
   color: white;
@@ -9,15 +10,18 @@ body {
   margin: 0;
 }
 
+/* Kotak utama */
 .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.1);
-  padding: 40px;
+  padding: 40px 30px;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  width: 320px;
 }
 
+/* Foto profil */
 .profile-pic {
   width: 100px;
   height: 100px;
@@ -26,6 +30,7 @@ body {
   border: 3px solid white;
 }
 
+/* Judul */
 h1 {
   margin: 10px 0 5px;
 }
@@ -35,28 +40,36 @@ p {
   opacity: 0.8;
 }
 
+/* Tombol-tombol media sosial */
 .links {
   margin-top: 25px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
+/* Desain tombol balok */
 .btn {
   text-decoration: none;
   color: white;
-  padding: 12px;
-  border-radius: 30px;
+  padding: 15px;
+  border-radius: 10px;
   font-weight: bold;
+  text-align: center;
+  font-size: 16px;
   transition: all 0.3s ease;
+  width: 100%;
+  display: block;
 }
 
+/* Warna tiap media sosial */
 .instagram { background: #E4405F; }
 .tiktok { background: #010101; }
 .youtube { background: #FF0000; }
 .github { background: #333333; }
 .facebook { background: #1877F2; }
 
+/* Efek hover */
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
