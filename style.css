@@ -37,26 +37,41 @@ section {
 
 /* ===== HERO ===== */
 .hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 40px 25px;
   background: url("images/20f3ce301d5db37417fb03ca798d19ad.jpg") center/cover no-repeat;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px; /* jarak antara foto dan teks */
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 3px solid #fff;
   object-fit: cover;
-  margin-bottom: 20px;
 }
 
-.hero h1 {
-  font-size: 1.6em;
+.hero-text h1 {
+  font-size: 1.4em;
+  margin-bottom: 6px;
 }
 
-.hero p {
-  font-size: 1em;
-  margin-top: 10px;
-  max-width: 300px;
+.hero-text p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #ddd;
+  max-width: 250px;
 }
 
 /* ===== ABOUT ===== */
