@@ -3,19 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Sosial Saya</title>
+  <title>Tentang Saya</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Foto Profil -->
+
+  <!-- ===== Bagian Header ===== -->
+  <header class="hero">
     <img src="images/f392481ab4535605f0a67d899aeac11d.jpg" alt="Foto Profil" class="profile-pic">
-
-    <!-- Nama dan bio -->
     <h1>@namakamu</h1>
-    <p>Temukan aku di media sosial ✨</p>
+    <p>Selamat datang di halaman pribadiku 🌸</p>
+  </header>
 
-    <!-- Tombol Media Sosial -->
+  <!-- ===== Bagian Tentang ===== -->
+  <section class="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Halo! Saya adalah seseorang yang suka berbagi karya, musik, dan foto melalui internet.
+      Website ini berisi tautan ke media sosial saya, beberapa musik favorit, dan galeri foto.
+      Semua hal yang saya sukai, saya kumpulkan di sini ✨
+    </p>
+  </section>
+
+  <!-- ===== Bagian Media Sosial ===== -->
+  <section class="social">
+    <h2>Temukan Saya di</h2>
     <div class="links">
       <a href="https://instagram.com/username" target="_blank" class="btn instagram">Instagram</a>
       <a href="https://tiktok.com/@username" target="_blank" class="btn tiktok">TikTok</a>
@@ -23,41 +35,34 @@
       <a href="https://github.com/username" target="_blank" class="btn github">GitHub</a>
       <a href="https://facebook.com/username" target="_blank" class="btn facebook">Facebook</a>
     </div>
+  </section>
 
-    <!-- Area pengaturan -->
-    <div class="customizer">
-      <h3>🔧 Kustomisasi</h3>
-      <label for="bgInput">Ganti Background:</label>
-      <input type="file" id="bgInput" accept="image/*">
-      <br>
-      <label for="ppInput">Ganti Foto Profil:</label>
-      <input type="file" id="ppInput" accept="image/*">
+  <!-- ===== Bagian Musik ===== -->
+  <section class="music">
+    <h2>Musik Favorit</h2>
+    <p>Beberapa lagu atau playlist yang sering saya dengarkan 🎵</p>
+    <div class="music-list">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5uEYRdEIh9Bo4fpjDd4Na9?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     </div>
-  </div>
+  </section>
 
-  <script>
-    // Ganti background dengan gambar yang di-upload
-    const bgInput = document.getElementById('bgInput');
-    bgInput.addEventListener('change', function (e) {
-      const file = e.target.files[0];
-      if (file) {
-        const url = URL.createObjectURL(file);
-        document.body.style.backgroundImage = `url('${url}')`;
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center';
-      }
-    });
+  <!-- ===== Bagian Galeri ===== -->
+  <section class="gallery">
+    <h2>Galeri Foto</h2>
+    <div class="gallery-grid">
+      <img src="images/2dc0f1a617c6c8009209be94bdc4b0c2.jpg" alt="Foto 1">
+      <img src="images/2dc0f1a617c6c8009209be94bdc4b0c2.jpg" alt="Foto 2">
+      <img src="images/galeri3.jpg" alt="Foto 3">
+      <img src="images/galeri4.jpg" alt="Foto 4">
+    </div>
+  </section>
 
-    // Ganti foto profil dengan gambar baru
-    const ppInput = document.getElementById('ppInput');
-    const profilePic = document.querySelector('.profile-pic');
-    ppInput.addEventListener('change', function (e) {
-      const file = e.target.files[0];
-      if (file) {
-        const url = URL.createObjectURL(file);
-        profilePic.src = url;
-      }
-    });
-  </script>
+  <!-- ===== Bagian Footer ===== -->
+  <footer>
+    <p>© 2025 @namakamu — dibuat dengan ❤️ dan GitHub Pages</p>
+  </footer>
+
 </body>
 </html>
