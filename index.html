@@ -2,65 +2,44 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Website Pribadi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== NAVIGASI ===== -->
-  <nav class="navbar">
-    <div class="container">
-      <h1 class="logo">Nama Kamu</h1>
-      <ul class="nav-links">
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#social">Sosial</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- ===== HERO / PROFIL ===== -->
-  <header class="hero">
-    <div class="hero-content">
-      <img src="images/profil.jpg" alt="Foto Profil" class="profile-pic">
-      <h2>Halo, Saya <span>Nama Kamu</span></h2>
-      <p>Selamat datang di website pribadiku 🌿</p>
-      <a href="#about" class="btn primary-btn">Mulai Scroll</a>
-    </div>
-  </header>
-
-  <!-- ===== BAGIAN TENTANG ===== -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Tentang Saya</h2>
-      <p>
-        Halo! Saya seseorang yang suka mempelajari hal baru, berbagi ide, dan membuat sesuatu yang kreatif.
-        Website ini menjadi tempat untuk saya menampilkan berbagai hal tentang diri saya dan hal-hal yang saya sukai.
-      </p>
-    </div>
+  <!-- ===== HEADER / PROFIL ===== -->
+  <section class="hero">
+    <img src="images/profil.jpg" alt="Foto Profil" class="profile-pic">
+    <h1>Nama Kamu</h1>
+    <p>Selamat datang di halaman pribadiku 🌿</p>
   </section>
 
-  <!-- ===== BAGIAN SOSIAL MEDIA ===== -->
-  <section id="social" class="section dark">
-    <div class="container">
-      <h2>Temukan Saya di</h2>
-      <div class="social-links">
-        <a href="https://instagram.com/" target="_blank" class="btn instagram">Instagram</a>
-        <a href="https://tiktok.com/" target="_blank" class="btn tiktok">TikTok</a>
-        <a href="https://youtube.com/" target="_blank" class="btn youtube">YouTube</a>
-        <a href="https://github.com/" target="_blank" class="btn github">GitHub</a>
-      </div>
+  <!-- ===== ABOUT ===== -->
+  <section class="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Halo! Saya seseorang yang suka mempelajari hal baru, berbagi ide, dan menciptakan sesuatu yang menarik.
+      Website ini adalah ruang pribadi saya untuk menampilkan hal-hal yang saya sukai dan karya yang saya buat.
+    </p>
+  </section>
+
+  <!-- ===== MEDIA SOSIAL ===== -->
+  <section class="social">
+    <h2>Media Sosial</h2>
+    <div class="social-links">
+      <a href="https://instagram.com/" class="btn instagram" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/" class="btn tiktok" target="_blank">TikTok</a>
+      <a href="https://youtube.com/" class="btn youtube" target="_blank">YouTube</a>
+      <a href="https://github.com/" class="btn github" target="_blank">GitHub</a>
     </div>
   </section>
 
   <!-- ===== KONTAK ===== -->
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Hubungi Saya</h2>
-      <p>Ingin berkolaborasi atau sekadar menyapa? Kirim pesan ke saya 👇</p>
-      <a href="mailto:emailkamu@example.com" class="btn contact">Kirim Email</a>
-    </div>
+  <section class="contact">
+    <h2>Hubungi Saya</h2>
+    <p>Ingin berkolaborasi atau sekadar menyapa? Kirim email ke:</p>
+    <a href="mailto:emailkamu@example.com" class="btn contact-btn">Kirim Email</a>
   </section>
 
   <!-- ===== FOOTER ===== -->
