@@ -1,22 +1,17 @@
-// Greeting otomatis
+// script.js atau di bawah body sebelum </body>
 const greetingEl = document.getElementById("greeting");
-const hour = new Date().getHours();
-if(hour >= 5 && hour < 12) greetingEl.textContent = "Selamat Pagi";
-else if(hour >= 12 && hour < 15) greetingEl.textContent = "Selamat Siang";
-else if(hour >= 15 && hour < 18) greetingEl.textContent = "Selamat Sore";
-else greetingEl.textContent = "Selamat Malam";
+const now = new Date();
+const hour = now.getHours();
+let greetingText = "Selamat Pagi";
 
-// Animasi scroll: highlight section yang terlihat
-const sections = document.querySelectorAll("section");
+if (hour >= 4 && hour < 10) {
+    greetingText = "Selamat Pagi";
+} else if (hour >= 10 && hour < 15) {
+    greetingText = "Selamat Siang";
+} else if (hour >= 15 && hour < 18) {
+    greetingText = "Selamat Sore";
+} else {
+    greetingText = "Selamat Malam";
+}
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add("active");
-    } else {
-      entry.target.classList.remove("active");
-    }
-  });
-}, { threshold: 0.5 });
-
-sections.forEach(section => observer.observe(section));
+greetingEl.textContent = greetingText;
