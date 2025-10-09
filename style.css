@@ -92,6 +92,7 @@ section {
   color: #FFFFFF;
   text-decoration: none;
   animation: bounce 1.5s infinite;
+  font-weight: 400;
 }
 
 @keyframes bounce {
