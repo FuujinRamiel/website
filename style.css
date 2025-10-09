@@ -48,12 +48,12 @@ section {
 /* ===== Halaman Home: Jam Digital ===== */
 #digital-clock {
   font-size: 2em;           /* ukuran lebih besar agar mudah dilihat */
-  color: #1DB954;           /* warna hijau Spotify supaya kontras */
+  color: #FFFFFF;           /* warna hijau Spotify supaya kontras */
   margin-bottom: 10px;      /* jarak ke greeting */
   text-align: center;       /* posisinya di tengah section */
   font-weight: bold;
   letter-spacing: 1px;      /* jarak antar karakter agar terlihat rapi */
-  width: 100%;              /* agar lebar penuh section */
+  width: 50%;              /* agar lebar penuh section */
   display: block;           
 }
 
@@ -88,8 +88,8 @@ section {
   display: block;
   text-align: center;
   margin-top: 20px;
-  font-size: 1.2em;
-  color: #1DB954;
+  font-size: 1.8em;
+  color: #FFFFFF;
   text-decoration: none;
   animation: bounce 1.5s infinite;
 }
