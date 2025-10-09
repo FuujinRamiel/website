@@ -30,14 +30,14 @@ var typedName = new Typed('#typed-name', {
   strings: ["Fuujin Kisuke"],
   typeSpeed: 80,
   backSpeed: 40,
-  loop: true
+  loop: false
 });
 
 // Intro
 var typedIntro = new Typed('#typed-intro', {
-  strings: ["VENI, VIDI, VICI"],
+  strings: ["Welcome"],
   typeSpeed: 80,
   backSpeed: 40,
-  loop: true,
+  loop: false,
   startDelay: 1000
 });
