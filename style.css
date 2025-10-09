@@ -55,8 +55,8 @@ section.active {
   position: absolute;      /* posisi relatif ke section */
   bottom: 10px;            /* jarak 10px dari bawah section */
   left: 10px;              /* jarak 10px dari kiri section */
-  width: 10%;              /* ukuran 10% dari lebar section (sesuai permintaan) */
-  height: auto;            /* proporsional */
+  width: 10px;              /* ukuran 10% dari lebar section (sesuai permintaan) */
+  height: 10px;            /* proporsional */
 }
 
 .biodata-block {
