@@ -45,60 +45,59 @@ section {
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
 }
 
-/* ===== PROFILE CARD SECTION ===== */
+/* ===== PROFILE CARD STYLE ===== */
 .profile-card {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #ffffff; /* kotak putih */
-  color: #000; /* warna teks hitam */
-  border-radius: 25px; /* sudut tumpul */
-  padding: 20px 30px;
-  margin: 40px auto;
-  width: 85%;
-  max-width: 900px;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1); /* efek lembut biar nyatu */
+  align-items: center;          /* sejajarkan foto & teks secara vertikal */
+  justify-content: flex-start;  /* mulai dari kiri */
+  background-color: #fff;       /* warna putih */
+  color: #000;                  /* warna teks */
+  border-radius: 15px;          /* sudut tumpul */
+  padding: 30px 50px;           /* jarak dalam */
+  margin: 40px auto;            /* tengah di halaman */
+  width: 90%;                   /* panjang mendekati penuh */
+  max-width: 1000px;            /* batas maksimum biar gak terlalu lebar */
+  min-height: 200px;            /* tinggi minimum */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* bayangan lembut */
+  gap: 30px;                    /* jarak antara foto dan teks */
 }
 
-/* foto profil */
+/* ===== PROFILE PICTURE ===== */
 .profile-pic {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%; /* bikin bulat */
-  object-fit: cover;
-  border: 4px solid #fff;
-  margin-right: 25px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;           /* biar bulat */
+  object-fit: cover;            /* jaga rasio gambar */
+  border: 4px solid #000;       /* garis tepi hitam (opsional) */
 }
 
-/* teks */
+/* ===== PROFILE TEXT ===== */
 .profile-text {
-  flex: 1;
+  flex: 1;                      /* isi ruang kosong di kanan foto */
 }
 
 .profile-text h2 {
-  font-size: 1.7em;
+  font-size: 28px;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .profile-text p {
-  font-size: 1em;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE (untuk HP) ===== */
 @media (max-width: 600px) {
   .profile-card {
-    flex-direction: column;
+    flex-direction: column;  /* susun ke bawah di layar kecil */
     text-align: center;
   }
 
   .profile-pic {
-    margin: 0 0 15px 0;
+    margin-bottom: 20px;
   }
 }
-
 
 /* === JAM DIGITAL & GREETING === */
 .time-container {
@@ -314,21 +313,4 @@ iframe {
   margin-top: 20px;
   border-radius: 12px;
 }
-
-/* Gambar hiasan bawah di halaman 1 */
-.bottom-deco {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90% !important; /* bisa kamu ubah sesuai keinginan */
-  height: 90% !important;
-  opacity: 0.9;
-  pointer-events: none; /* supaya tidak mengganggu klik */
-}
-
-#home {
-  position: relative;
-  min-height: 100vh;
-  text-align: center;
-}
+  
