@@ -20,3 +20,24 @@ function updateClockAndGreeting() {
 // Update setiap detik
 setInterval(updateClockAndGreeting, 1000);
 updateClockAndGreeting();
+
+// ==============================
+// 2. Efek ketik dengan Typed.js
+// ==============================
+
+// Nama
+var typedName = new Typed('#typed-name', {
+  strings: ["Fuujin Kisuke"],
+  typeSpeed: 80,
+  backSpeed: 40,
+  loop: true
+});
+
+// Intro
+var typedIntro = new Typed('#typed-intro', {
+  strings: ["VENI, VIDI, VICI"],
+  typeSpeed: 80,
+  backSpeed: 40,
+  loop: true,
+  startDelay: 1000
+});
