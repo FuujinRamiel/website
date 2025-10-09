@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: #121212;
+  background-color: transparent;
   color: #fff;
   overflow-x: hidden;
   scroll-behavior: smooth;
