@@ -274,7 +274,8 @@ iframe {
   bottom: 5px;
   left: 20%;
   transform: translateX(-50%);
-  width: 100px; /* bisa kamu ubah sesuai keinginan */
+  width: 100px !important; /* bisa kamu ubah sesuai keinginan */
+  height: auto !important;
   opacity: 0.9;
   pointer-events: none; /* supaya tidak mengganggu klik */
 }
