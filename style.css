@@ -264,3 +264,11 @@ iframe {
   border-radius: 12px;
 }
   
+.intro-text {
+  margin-top: 15px;
+  font-size: 1.1em;      /* ukuran teks */
+  color: #ffffff;         /* warna teks */
+  text-align: center;     /* posisi teks di tengah */
+  line-height: 1.5;       /* jarak antar baris */
+  opacity: 0.9;           /* sedikit transparan agar lembut */
+}  
