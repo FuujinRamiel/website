@@ -49,73 +49,76 @@ section {
   line-height: 1.5;
 }
 
-/* ===== PROFILE CARD ===== */
-.profile-card {
-  display: flex;                   /* foto kiri, teks kanan */
-  align-items: center;             /* sejajarkan vertikal */
-  justify-content: flex-start;     /* mulai dari kiri */
-  background-color: #fff;
+/* ===== ID CARD STYLE ===== */
+.idcard {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.idcard-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
   color: #000;
-  border-radius: 25px;
-  padding: 30px 50px;
-  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
   width: 90%;
-  max-width: 1000px;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
-  gap: 40px;                       /* jarak antara foto dan teks */
-
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeSlideUp 1.2s ease-out forwards;
+  max-width: 700px;
+  height: 180px; /* tinggi kartu */
+  padding: 20px 30px;
+  gap: 25px;
+  overflow: hidden;
 }
 
-/* ANIMASI MUNCUL */
-@keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* FOTO PROFIL */
-.profile-pic {
-  width: 160px;
-  height: 160px;
+/* Foto profil */
+.idcard-photo {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #000;
-  flex-shrink: 0;                  /* jangan mengecil di layar besar */
-  transition: transform 0.3s ease;
+  border: 3px solid #000;
+  flex-shrink: 0; /* biar gak mengecil di layar kecil */
 }
 
-.profile-pic:hover {
-  transform: scale(1.07);
+/* Teks */
+.idcard-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* TEKS PROFIL */
-.profile-text {
-  flex: 1;
+.idcard-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-.profile-text h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.idcard-info p {
+  font-size: 1rem;
+  margin: 2px 0;
 }
 
-.profile-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* ===== RESPONSIVE UNTUK HP ===== */
-@media (max-width: 700px) {
-  .profile-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 25px;
+/* Biar layout tetap stabil di HP */
+@media (max-width: 600px) {
+  .idcard-box {
+    width: 95%;
+    height: 160px;
+    gap: 15px;
+    padding: 15px;
   }
 
-  .profile-pic {
-    margin-bottom: 15px;
+  .idcard-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .idcard-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .idcard-info p {
+    font-size: 0.9rem;
   }
 }
 
