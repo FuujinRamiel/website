@@ -48,7 +48,8 @@ section.active {
 }
 
 .biodata-block {
-  background-color: silver;   /* warna silver */
+  background-color: silver; /* warna silver */
+  align-item: flex-start;
   padding: 20px;              /* jarak di dalam balok */
   border-radius: 12px;        /* sudut melengkung */
   max-width: 400px;           /* lebar balok */
