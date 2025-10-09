@@ -1,154 +1,99 @@
-/* ===== RESET ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
-body {
-  font-family: "Roboto", sans-serif;
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
   color: #fff;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
-/* ===== SECTION UMUM ===== */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 section {
-  width: 100%;
-  max-width: 420px; /* agar pas skala 9:16 di tengah */
-  aspect-ratio: 9/16;
-  min-height: 100vh;
-  padding: 40px 25px;
+  width: 100vw;
+  height: 100vh; /* Rasio 9:16 */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background: transparent;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.05);
-}
-
-/* ===== HERO ===== */
-.hero {
-  display: flex;
-  justify-content: flex-start;  /* elemen ke kiri */
-  align-items: flex-start;      /* sejajar atas */
-  text-align: left;
-  padding: 30px 25px;
-  background: url("images/20f3ce301d5db37417fb03ca798d19ad.jpg") center/cover no-repeat;
-  border-radius: 20px;
-  box-shadow: 0 0 15px rgba(255,255,255,0.05);
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: row;          /* foto dan teks sejajar horizontal */
-  align-items: center;
-  gap: 20px;                    /* jarak antara foto dan teks */
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  object-fit: cover;
-}
-
-.hero-text h1 {
-  font-size: 1.4em;
-  color: #ffcc00;
-  -webkit-text-stroke: 1px black;
-  margin-bottom: 6px;
-}
-
-.hero-text p {
-  font-size: 1.0em;
-  color: #ddd;
-  line-height: 1.4;
-  max-width: 250px;
-}
-
-/* ===== ABOUT ===== */
-.about {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.about p {
-  font-size: 0.95em;
-  max-width: 330px;
-  line-height: 1.6;
-}
-
-/* ===== MEDIA SOSIAL ===== */
-.social {
-  background: url("images/6fd11977bf9641b3e587c07ef99072a1.jpg") center/cover no-repeat !important;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.btn {
-  text-decoration: none;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  width: 200px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-/* ===== SPOTIFY PLAYLIST ===== */
-.music {
-  background: url("images/77df145c3380a5384c7fbbaa3be9d41e (1).jpg") center/cover no-repeat;
-}
-
-.spotify-player {
-  margin-top: 20px;
-  width: 100%;
-  max-width: 340px;
-}
-
-/* Warna tombol */
-.instagram { background: #E4405F; }
-.tiktok { background: #000; border: 1px solid #fff; }
-.youtube { background: #FF0000; }
-.github { background: #333; }
-
-/* ===== KONTAK ===== */
-.contact {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.contact-btn {
-  background: #1e90ff;
-  margin-top: 15px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  text-align: center;
-  font-size: 0.8em;
   padding: 20px;
-  opacity: 0.7;
-  width: 100%;
-  max-width: 420px;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 0.2;
+  transform: translateY(50px);
 }
+
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1, h2, p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+iframe {
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+a {
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px 0;
+  display: block;
+  font-size: 1.2em;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#gallery img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Warna berbeda tiap halaman */
+#home { background: linear-gradient(135deg, #1a1a1a, #2a2a2a);}
+#biodata { background: linear-gradient(135deg, #2a2a2a, #3a3a3a);}
+#socials { background: linear-gradient(135deg, #3a3a3a, #4a4a4a);}
+#gallery { background: linear-gradient(135deg, #4a4a4a, #5a5a5a);}
+#empty1 { background: linear-gradient(135deg, #5a5a5a, #6a6a6a);}
+#empty2 { background: linear-gradient(135deg, #6a6a6a, #7a7a7a);}
