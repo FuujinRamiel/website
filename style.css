@@ -47,6 +47,15 @@ section.active {
   padding-right: 40px;     /* optional agar teks tidak mepet */
 }
 
+.biodata-block {
+  background-color: silver;   /* warna silver */
+  padding: 20px;              /* jarak di dalam balok */
+  border-radius: 12px;        /* sudut melengkung */
+  max-width: 400px;           /* lebar balok */
+  width: 100%;                /* responsive */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* opsional, efek bayangan */
+}
+
 /* ===== TEKS ===== */
 h1, h2, p {
   margin: 10px 0;
