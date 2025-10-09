@@ -138,42 +138,62 @@ section {
   height: auto;
 }
 
-/* ===== Halaman Media Sosial ===== */
+/* ===== Halaman Media Sosial (putih & ukuran sama rata) ===== */
 #socials {
   background: linear-gradient(135deg, #3a3a3a, #4a4a4a);
   padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center; /* tombol di tengah grid cell */
 }
 
 .social-btn {
   display: flex;
+  flex-direction: column; /* icon di atas, teks di bawah */
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  margin: 8px 0;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 0;
   border-radius: 12px;
-  color: #fff;
+  background-color: #fff; /* semua putih */
+  color: #1a1a1a;        /* teks hitam agar kontras */
   text-decoration: none;
   font-weight: bold;
+  width: 120px;           /* semua tombol sama lebar */
+  height: 120px;          /* semua tombol sama tinggi */
   transition: transform 0.2s, opacity 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .social-btn img {
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
+  width: 36px;   /* semua icon sama besar */
+  height: 36px;
 }
-
-/* Warna sesuai platform */
-.social-btn.instagram { background: #E1306C; }
-.social-btn.twitter   { background: #1DA1F2; }
-.social-btn.github    { background: #333333; }
-.social-btn.tiktok    { background: #000000; }
 
 /* Hover effect */
 .social-btn:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+  transform: scale(1.1);
+  opacity: 0.95;
 }
+
+/* Responsive: untuk layar kecil */
+@media (max-width: 480px) {
+  #socials {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+  }
+  
+  .social-btn {
+    width: 100px;
+    height: 100px;
+    font-size: 0.9em;
+  }
+  
+  .social-btn img {
+    width: 28px;
+    height: 28px;
+  }
 
 /* ===== Halaman Galeri ===== */
 #gallery {
