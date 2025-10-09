@@ -33,17 +33,6 @@ section {
   transition: opacity 0.8s ease, transform 0.8s ease;
   opacity: 0.2;
   transform: translateY(50px);
-
-  /* ===== Halaman Home ===== */
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* konten mulai dari atas */
-  align-items: center;         /* center horizontal */
-  min-height: 100vh;           /* full layar */
-  padding-top: 40px;           /* jarak dari atas layar */
-  padding-left: 20px;          /* opsional, jarak kiri */
-  padding-right: 20px;         /* opsional, jarak kanan */
 }
 
 section.active {
