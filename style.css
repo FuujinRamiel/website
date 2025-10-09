@@ -271,7 +271,7 @@ iframe {
 /* Gambar hiasan bawah di halaman 1 */
 .bottom-deco {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   width: 100px; /* bisa kamu ubah sesuai keinginan */
