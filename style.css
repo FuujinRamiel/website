@@ -21,13 +21,14 @@ body {
   flex-direction: column;
 }
 
+/* ===== SECTION STYLE ===== */
 section {
   width: 100vw;
-  height: 100vh; /* Rasio 9:16 */
+  min-height: 100vh; /* pastikan full layar */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center; /* default center untuk halaman lain */
   padding: 20px;
   transition: opacity 0.8s ease, transform 0.8s ease;
   opacity: 0.2;
@@ -39,9 +40,17 @@ section.active {
   transform: translateY(0);
 }
 
+/* ===== Khusus halaman Biodata ===== */
+#biodata {
+  align-items: flex-start; /* teks rata kiri */
+  padding-left: 40px;      /* tambahkan padding kiri */
+  padding-right: 40px;     /* optional agar teks tidak mepet */
+}
+
+/* ===== TEKS ===== */
 h1, h2, p {
-  text-align: left;
   margin: 10px 0;
+  text-align: left; /* default kiri */
 }
 
 h1 {
@@ -56,13 +65,16 @@ h2 {
 
 p {
   font-size: 1.2em;
+  line-height: 1.5;
 }
 
+/* ===== Iframe Spotify ===== */
 iframe {
   margin-top: 20px;
   border-radius: 12px;
 }
 
+/* ===== Link Media Sosial ===== */
 a {
   color: #1DB954;
   text-decoration: none;
@@ -72,6 +84,7 @@ a {
   font-size: 1.2em;
 }
 
+/* ===== Galeri ===== */
 #gallery {
   display: flex;
   justify-content: center;
@@ -91,7 +104,7 @@ a {
   transform: scale(1.05);
 }
 
-/* Warna berbeda tiap halaman */
+/* ===== Warna berbeda tiap halaman ===== */
 #home { background: linear-gradient(135deg, #1a1a1a, #2a2a2a);}
 #biodata { background: linear-gradient(135deg, #2a2a2a, #3a3a3a);}
 #socials { background: linear-gradient(135deg, #3a3a3a, #4a4a4a);}
