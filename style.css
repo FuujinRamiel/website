@@ -39,7 +39,7 @@ section.active {
 }
 
 h1, h2, p {
-  text-align: center;
+  text-align: left;
   margin: 10px 0;
 }
 
