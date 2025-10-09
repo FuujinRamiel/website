@@ -45,6 +45,25 @@ section {
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
 }
 
+/* ===== Halaman Home: Jam Digital ===== */
+#digital-clock {
+  font-size: 2em;           /* ukuran lebih besar agar mudah dilihat */
+  color: #1DB954;           /* warna hijau Spotify supaya kontras */
+  margin-bottom: 10px;      /* jarak ke greeting */
+  text-align: center;       /* posisinya di tengah section */
+  font-weight: bold;
+  letter-spacing: 1px;      /* jarak antar karakter agar terlihat rapi */
+  width: 100%;              /* agar lebar penuh section */
+  display: block;           
+}
+
+/* Responsive untuk layar kecil (mobile 9:16) */
+@media (max-width: 480px) {
+  #digital-clock {
+    font-size: 1.5em;       /* menyesuaikan ukuran layar kecil */
+    margin-bottom: 8px;
+  }
+
 /* ===== Halaman Home: teks tambahan, ikon mini, scroll down ===== */
 .home-subtext {
   margin-top: 20px;
