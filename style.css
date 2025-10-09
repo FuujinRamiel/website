@@ -227,20 +227,29 @@ section {
 }
 
 /* ===== Halaman Galeri ===== */
-#gallery {
-  display: flex;
+/* Reset agar tidak ada jarak kosong */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Pastikan section galeri menutupi layar penuh */
 .full-gallery {
   position: relative;
-  width: 100%;
-  height: 100vh; /* penuh 1 layar */
+  width: 100vw; /* penuh secara horizontal */
+  height: 100vh; /* penuh secara vertikal */
   overflow: hidden;
 }
 
+/* Gambar isi penuh */
 .full-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* biar gambar isi penuh tanpa gepeng */
-  display: block;
+  object-fit: cover; /* isi penuh tanpa gepeng */
 }
 
 /* ===== Halaman Kosong ===== */
