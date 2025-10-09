@@ -99,11 +99,13 @@ section {
   height: 24px;
 }
 
+/* Warna sesuai platform */
 .social-btn.instagram { background: #E1306C; }
 .social-btn.twitter   { background: #1DA1F2; }
 .social-btn.github    { background: #333333; }
-.social-btn.tiktok    { background: #000000; color: #fff; }
+.social-btn.tiktok    { background: #000000; }
 
+/* Hover effect */
 .social-btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
