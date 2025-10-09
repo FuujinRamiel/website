@@ -5,7 +5,7 @@ function updateClockAndGreeting() {
   const seconds = String(now.getSeconds()).padStart(2, "0");
 
   // Jam digital
-  document.getElementById("digital-clock").textContent = `${hours}:${minutes}:${seconds}`;
+  document.getElementById("digitalClock").textContent = `${hours}:${minutes}:${seconds}`;
 
   // Greeting otomatis
   let greeting = "";
