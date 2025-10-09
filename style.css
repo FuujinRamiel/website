@@ -175,13 +175,14 @@ section {
   background-color: #2a2a2a;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 10px 20px;
   border-radius: 50px;
   color: white;
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.2s, background 0.3s;
+  gap: 15px;
 }
 
 .social-card:hover {
@@ -190,23 +191,22 @@ section {
 }
 
 .social-icon {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .social-text {
   flex: 1;
-  text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 500;
   color: #fff;
 }
 
 .social-menu {
   color: #bbb;
-  font-size: 1.8em;
+  font-size: 1.4em;
   cursor: default;
 }
 
@@ -216,13 +216,13 @@ section {
     padding: 8px 15px;
   }
 
-  .social-text {
-    font-size: 1em;
+  .social-icon {
+    width: 30px;
+    height: 30px;
   }
 
-  .social-icon {
-    width: 45px;
-    height: 45px;
+  .social-text {
+    font-size: 1em;
   }
 }
 
