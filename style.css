@@ -63,10 +63,11 @@ section.active {
 }
 
 .biodata-bottom-img {
-  width: 20px;      /* sesuaikan ukuran */
-  height: 20px;
-  align-self: right; /* center horizontal */
-  margin-bottom: 10px; /* jarak dari tepi bawah section */
+  position: absolute;      /* posisi relatif ke section */
+  bottom: 10px;            /* jarak 10px dari bawah section */
+  left: 10px;              /* jarak 10px dari kiri section */
+  width: 10%;              /* ukuran 10% dari lebar section (sesuai permintaan) */
+  height: auto;            /* proporsional */
 }
 
 .biodata-block {
