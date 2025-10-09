@@ -267,3 +267,20 @@ iframe {
   margin-top: 20px;
   border-radius: 12px;
 }
+
+/* Gambar hiasan bawah di halaman 1 */
+.bottom-deco {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px; /* bisa kamu ubah sesuai keinginan */
+  opacity: 0.9;
+  pointer-events: none; /* supaya tidak mengganggu klik */
+}
+
+#home {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+}
