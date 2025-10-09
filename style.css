@@ -272,7 +272,7 @@ iframe {
 .bottom-deco {
   position: absolute;
   bottom: 5px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   width: 100px; /* bisa kamu ubah sesuai keinginan */
   opacity: 0.9;
