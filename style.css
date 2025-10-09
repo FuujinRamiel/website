@@ -66,6 +66,15 @@ section {
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
+.biodata-extra {
+  margin-top: 20px;       /* jarak dari block silver */
+  font-size: 1.1em;       /* ukuran font */
+  line-height: 1.5;
+  text-align: left;       /* rata kiri */
+  color: #fff;            /* warna teks */
+  max-width: 600px;       /* optional supaya tidak terlalu panjang */
+}
+
 .biodata-bottom-img {
   position: absolute;
   bottom: 1px;
