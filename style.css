@@ -45,6 +45,26 @@ section {
   background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
 }
 
+/* ===== Halaman Home: teks tambahan, ikon mini, scroll down ===== */
+.home-subtext {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ccc;
+  text-align: center;
+}
+
+.home-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.home-icons img {
+  width: 32px;
+  height: 32px;
+}
+
 .scroll-down {
   display: block;
   text-align: center;
