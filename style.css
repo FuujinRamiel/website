@@ -52,6 +52,7 @@ section {
 /* === JAM DIGITAL & GREETING === */
 .time-container {
   text-align: center;
+  align-items: center;
   margin-top: 25px;
   color: #fff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
