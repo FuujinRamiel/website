@@ -133,7 +133,7 @@ section {
 #gallery img {
   width: 200px;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
   transition: transform 0.3s;
 }
