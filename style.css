@@ -85,6 +85,11 @@ section {
   animation: glow 2s ease-in-out infinite alternate;
 }
 
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* biar ga ada geser horizontal */
+}
+
 /* Responsive untuk layar kecil (mobile 9:16) */
 @media (max-width: 480px) {
   #digital-clock {
