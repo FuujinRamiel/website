@@ -31,7 +31,8 @@ section {
   align-items: center;
   padding: 20px;
   transition: opacity 0.8s ease, transform 0.8s ease;
-  opacity: 1;
+  background-color: inherit; /* warisan dari body/section gradient */
+  opacity: 1; /* jangan ada transparansi */
 }
 
 /* ===== Halaman Home ===== */
