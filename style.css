@@ -51,6 +51,13 @@ section.active {
   padding-right: 40px;     /* optional agar teks tidak mepet */
 }
 
+.biodata-bottom-img {
+  width: 150px;      /* sesuaikan ukuran */
+  height: auto;
+  align-self: center; /* center horizontal */
+  margin-bottom: 10px; /* jarak dari tepi bawah section */
+}
+
 .biodata-block {
   background-color: silver; /* warna silver */
   align-item: flex-start;
