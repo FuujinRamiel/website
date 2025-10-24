@@ -248,3 +248,26 @@ iframe {
   transform: translateY(0) scale(1);
   opacity: 1;
   }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pastikan elemen utama langsung tampil */
+body, html {
+  background-color: #fff; /* ganti sesuai warna background kamu */
+  color: #000; /* pastikan teks terlihat */
+}
+
+/* Saat halaman baru load */
+body.loaded .reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
