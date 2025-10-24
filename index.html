@@ -1,30 +1,18 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website fuujin</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Shiki</title>
+
+  <!-- Style utama -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- 🔹 AOS (Animate On Scroll) CSS -->
+  <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 
-  <!-- Typed.js CDN -->
+  <!-- Typed.js CDN (boleh di head karena kita inisialisasi setelah DOM siap) -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <!-- 🔹 Custom Fade-Up-Zoom Effect -->
-  <style>
-    /* Efek tambahan agar munculnya lebih smooth */
-    [data-aos="fade-up-zoom"] {
-      transform: translateY(50px) scale(0.95);
-      opacity: 0;
-      transition-property: transform, opacity;
-    }
-    [data-aos="fade-up-zoom"].aos-animate {
-      transform: translateY(0) scale(1);
-      opacity: 1;
-    }
-  </style>
 </head>
 <body>
 
@@ -40,7 +28,7 @@
     </div>
 
     <iframe src="https://open.spotify.com/embed/playlist/1kTiikVupzaaZMSLMYDF6O?utm_source=generator"
-            width="350" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"
+            width="350" height="400" frameborder="0" allow="encrypted-media"
             data-aos="fade-up-zoom" data-aos-delay="400"></iframe>
   </section>
 
@@ -104,12 +92,12 @@
     </a>
   </section>
 
-  <!-- Halaman 4: Galeri -->
+  <!-- Galeri -->
   <section id="gallery" class="full-gallery" data-aos="fade-up-zoom">
     <img src="images/Proyek Baru 63 [7DF06F0].png" alt="Gallery Image" class="full-photo" data-aos="fade-up-zoom" data-aos-delay="100">
   </section>
 
-  <!-- Halaman 5 & 6 -->
+  <!-- Kosong -->
   <section id="empty1" data-aos="fade-up-zoom">
     <h2 data-aos="fade-up-zoom" data-aos-delay="100">Kosong 1</h2>
   </section>
@@ -118,36 +106,10 @@
     <h2 data-aos="fade-up-zoom" data-aos-delay="100">Kosong 2</h2>
   </section>
 
+  <!-- AOS JS (harus sebelum script.js agar AOS sudah terdefinisi) -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
   <!-- Script utama -->
   <script src="script.js"></script>
-
-  <!-- Typed.js Script -->
-  <script>
-    var typedName = new Typed('#typed-name', {
-      strings: ["Fuujin Kisuke"],
-      typeSpeed: 80,
-      backSpeed: 40,
-      loop: false
-    });
-
-    var typedIntro = new Typed('#typed-intro', {
-      strings: ["Welcome"],
-      typeSpeed: 80,
-      backSpeed: 40,
-      loop: false,
-      startDelay: 1000
-    });
-  </script>
-
-  <!-- 🔹 AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // durasi animasi
-      once: true,     // hanya muncul sekali
-      offset: 120,    // jarak sebelum animasi mulai
-      easing: 'ease-in-out'
-    });
-  </script>
 </body>
-    </html>
+</html>
