@@ -6,268 +6,134 @@
   box-sizing: border-box;
 }
 
+/* === RESET DAN DASAR === */
 html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Poppins', sans-serif;
-  background-color: #1a1a1a;
-  color: #fff;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-y: auto;
   scroll-behavior: smooth;
+  background-color: #0b0b0b; /* gelap elegan */
+  color: #fff; /* teks putih agar kontras */
+  font-family: "Poppins", sans-serif;
 }
 
-/* ===== BODY ===== */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-/* ===== SECTION STYLE ===== */
+/* === SECTION === */
 section {
-  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  transition: opacity 0.8s ease, transform 0.8s ease;
-  background-color: inherit;
-}
-
-/* ===== Halaman Home ===== */
-#home {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 40px;
-  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
-}
-
-/* === JAM DIGITAL & GREETING === */
-.greeting-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 60px 20px;
+  box-sizing: border-box;
 }
 
-#digitalClock {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+/* === HEADING & TEKS === */
+h1, h2, p {
   color: #fff;
-  text-shadow: 0 0 10px rgba(255,255,255,0.8);
-  margin-bottom: 8px;
-  animation: glow 2s ease-in-out infinite alternate;
+  margin: 10px 0;
 }
 
-#greeting {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #e0e0e0;
+.intro-text {
+  font-size: 1.2em;
   opacity: 0.9;
 }
 
-@keyframes glow {
-  from { text-shadow: 0 0 8px #fff; }
-  to { text-shadow: 0 0 20px #00ffff; }
+/* === JAM DIGITAL === */
+#digitalClock {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
-  #digitalClock {
-    font-size: 1.8rem;
-  }
-  #greeting {
-    font-size: 1.2rem;
-  }
-}
-
-/* ===== Halaman Biodata ===== */
-#biodata {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 40px;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
-}
-
+/* === BIODATA === */
 .biodata-block {
-  background-color: silver;
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 20px;
   max-width: 400px;
-  width: 100%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .biodata-extra {
-  margin-top: 40px;
-  font-size: 1.5em;
-  line-height: 1.5;
-  text-align: left;
-  color: #fff;
-  max-width: 600px;
+  font-style: italic;
+  margin-top: 20px;
+  color: #ccc;
 }
 
 .biodata-bottom-img {
-  position: absolute;
-  bottom: 1px;
-  right: 10px;
-  width: 50%;
-  height: auto;
+  margin-top: 30px;
+  width: 150px;
+  opacity: 0.8;
 }
 
-/* ===== Halaman Media Sosial ===== */
-#socials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 40px 20px;
-  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
-}
-
+/* === SOSIAL MEDIA === */
 .social-card {
-  width: 90%;
-  max-width: 450px;
-  background-color: #2a2a2a;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px 20px;
-  border-radius: 50px;
-  color: white;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.2s, background 0.3s;
-  gap: 15px;
+  padding: 12px 20px;
+  border-radius: 14px;
+  width: 280px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
 }
 
 .social-card:hover {
-  transform: scale(1.02);
-  background-color: #333;
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .social-icon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  object-fit: contain;
+  width: 30px;
+  height: 30px;
 }
 
 .social-text {
   flex: 1;
-  font-size: 1.1em;
+  text-align: left;
+  margin-left: 15px;
   font-weight: 500;
-  color: #fff;
 }
 
 .social-menu {
-  color: #bbb;
-  font-size: 1.4em;
+  font-size: 20px;
+  color: #ccc;
 }
 
-@media (max-width: 480px) {
-  .social-card {
-    width: 95%;
-    padding: 8px 15px;
-  }
-
-  .social-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .social-text {
-    font-size: 1em;
-  }
+/* === GALERI === */
+.full-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ===== Galeri ===== */
-#gallery {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#gallery .full-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* ===== Kosong ===== */
-#empty1 { background: linear-gradient(135deg, #5a5a5a, #6a6a6a); min-height: 100vh; padding: 40px; }
-#empty2 { background: linear-gradient(135deg, #6a6a6a, #7a7a7a); min-height: 100vh; padding: 40px; }
-
-/* ===== Teks Umum ===== */
-h1, h2, p {
-  margin: 10px 0;
-  text-align: left;
-}
-
-h1 { font-size: 2em; font-weight: 600; text-align: center; }
-h2 { font-size: 2em; font-weight: 500; text-align: center; }
-p  { font-size: 1.2em; line-height: 1.5; }
-
-/* ===== Spotify ===== */
-iframe {
-  margin-top: 20px;
-  border-radius: 12px;
-}
-
-.intro-text {
-  margin-top: 15px;
-  font-size: 2em;
-  color: #ffffff;
-  text-align: center;
+.full-photo {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   opacity: 0.9;
 }
 
-/* ====== 🌟 Tambahan efek scroll (fade-up-zoom) ====== */
-[data-aos="fade-up-zoom"] {
-  transform: translateY(50px) scale(0.97);
-  opacity: 0;
-  transition-property: transform, opacity;
-  transition-duration: 900ms;
-  transition-timing-function: ease-in-out;
+/* === AOS TRANSISI === */
+[data-aos] {
+  transition: all 0.8s ease;
 }
 
-[data-aos="fade-up-zoom"].aos-animate {
-  transform: translateY(0) scale(1);
-  opacity: 1;
+/* === RESPONSIF === */
+@media (max-width: 600px) {
+  .biodata-block {
+    width: 95%;
+    padding: 15px;
   }
-
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Pastikan elemen utama langsung tampil */
-body, html {
-  background-color: #fff; /* ganti sesuai warna background kamu */
-  color: #000; /* pastikan teks terlihat */
-}
-
-/* Saat halaman baru load */
-body.loaded .reveal {
-  opacity: 1;
-  transform: translateY(0);
+  .social-card {
+    width: 90%;
+  }
 }
