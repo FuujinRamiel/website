@@ -33,6 +33,28 @@ var typedName = new Typed('#typed-name', {
   loop: false
 });
 
+// ==============================
+// 3. Efek Muncul Saat Scroll
+// ==============================
+function revealOnScroll() {
+  const reveals = document.querySelectorAll('.reveal');
+
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const revealTop = reveals[i].getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('active');
+    } else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll(); // panggil langsung biar aktif saat load
+
 // Intro
 var typedIntro = new Typed('#typed-intro', {
   strings: ["Welcome"],
