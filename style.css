@@ -251,8 +251,8 @@ iframe {
 
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .reveal.active {
