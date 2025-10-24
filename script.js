@@ -33,22 +33,28 @@ var typedName = new Typed('#typed-name', {
   loop: false
 });
 
-// Efek muncul dari bawah saat di-scroll
+// ==============================
+// 3. Efek muncul dari bawah (reveal on scroll)
+// ==============================
 function revealOnScroll() {
   const reveals = document.querySelectorAll(".reveal");
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 100;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
+  const windowHeight = window.innerHeight;
+  
+  reveals.forEach((el) => {
+    const elementTop = el.getBoundingClientRect().top;
+    const elementBottom = el.getBoundingClientRect().bottom;
+    
+    // Jika elemen masuk area tampilan, munculkan
+    if (elementTop < windowHeight - 100 && elementBottom > 0) {
+      el.classList.add("active");
+    } else {
+      el.classList.remove("active"); // bisa dikomentari kalau mau tetap muncul
     }
-  }
+  });
 }
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", () => {
   document.body.classList.add("loaded");
-  revealOnScroll(); // langsung aktifin yang udah kelihatan
+  revealOnScroll(); // aktifkan elemen yang sudah terlihat
 });
